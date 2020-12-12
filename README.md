@@ -10,7 +10,10 @@ Repositório criado para o aprendizado básico de Git.
 **git pull origin master** //TROCAR O MAIN POR MASTER NAS CONFIGURAÇÕES PRIMEIRO, SÓ FAZER ESSE COMANDO SE O ARQUIVO .gitignore FOR CRIADO DIRETAMENTE PELO GITHUB <br/>
 
 **git status** //VERIFICA OS ARQUIVOS <br/>
-**git add .** //ADICIONA TODOS OS ARQUIVOS AO STAGE <br/>
+
+**git add -A**
+**git add .** //ADICIONA TODOS OS ARQUIVOS AO STAGED PARA DEPOIS EFETUAR O COMMIT, ESSES 3 COMANDOS SÃO IGUAIS<br/>
+**git add --all**
 
 **git commit -m "Projeto criado"** //SALVA UMA NOVA VERSÃO DO PROJETO <br/>
 **git push -u origin master** //ENVIA O REPOSITÓRIO LOCAL PARA O REPOSITÓRIO REMOTO, DEPOIS É SÓ FAZER O COMANDO **git push** <br/>

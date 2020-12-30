@@ -1,36 +1,25 @@
 # GIT BASH
- 
+
 #### Verificar configurações
-```
-git config --global
-```
+`git config --global`
 #### Atualizar/Cadastrar user e email
-```
-git config --global user.name “<NomeDeUsuario>”
-git config --global user.email “<EmailExemplo@gmail.com>”
-```
+user | email 
+:---| :---
+`git config --global user.name “<NomeDeUsuario>”` <br/> |`git config --global user.email “<EmailExemplo@gmail.com>”`
 #### Criar repositório local
-```sh
-git init 
-```
+`git init`
 > *Reinicializa o repositório caso possua.*
 
 #### Verificar status dos arquivos
-```sh
-git status
-```
+`git status`
 #### Adicionar arquivo untrackted ao staged
-```sh
-git add <NomeDoArquivo>
-git add . 
-git -A 
-git --all
-```
+Um por vez | tudo ao mesmo tempo
+:---:|:---:
+`git add <NomeDoArquivo>`<br/> |`git add .` <br/>
+-|`git --all` <br/>
+-|`git -A` <br/>
 #### Salvar uma versão, realizar um commit
-```sh
-git commit -m “mesagem do commit”
-```
+`git commit -m “mesagem do commit”`
 #### Alterar mensagem do último commit realizado
-```sh
-git commit -m “nova mesagem do commit” --amend 
-```
+`git commit -m “nova mesagem do commit” --amend` 
+

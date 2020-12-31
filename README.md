@@ -9,7 +9,7 @@
 
 ## :pushpin: Atualizar/Cadastrar user e email
 user | email 
-:---| :---
+:--- | :---
 `$ git config --global user.name “<NomeDeUsuario>”` <br/> |`$ git config --global user.email “<EmailExemplo@gmail.com>”`
 
 ## :pushpin: Criar repositório local
@@ -38,7 +38,7 @@ Inteiro  | Curto
 `git log`|`git log --oneline` 
 
 ## :pushpin: Associar repositório local com o de origem 
-`$ 	git remote add origin <UrlDoRepositorio>` //
+`$ 	git remote add origin <UrlDoRepositorio>`
 
 ## :pushpin: Trazer para o repositório local os arquivos do servidor 
 Primeira vez | Demais vezes
@@ -59,7 +59,7 @@ Primeira vez | Demais vezes
 ## :pushpin: Retira algo do statged 
 Um por vez | Todos
 :--- |:---
-`$	git restore --staged <nomeDoArquivoNoStage>` | `$ git restore --staged . // tudo`
+`$	git restore --staged <nomeDoArquivoNoStage>` | `$ git restore --staged .`
 
 ## :pushpin: Clonar um repositório 
 `$ git clone <”UrlDoRepositorio”>`

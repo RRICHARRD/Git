@@ -29,11 +29,21 @@ Um por vez                       | Tudo
 ## :pushpin: Salvar uma versão, realizar um commit
 `$ git commit -m “mensagem do commit”`
 
-## :pushpin: Alterar mensagem do último commit realizado
+> Verifica se o que você fez realmente foi salvo 
+## :pushpin: Inserir arquivo do staged no último commit já realizado
+`$git commit --amend`
+
+> *Vai abrir o editor VIM, muda a mensagem lá em cima se quiser e depois escreve :wq para sair.*
+> *o w vem de write e q de quite.*
+
+## :pushpin: Alterar mensagem do último commit realizado (Não tem na documentação oficial explicitamente) 
 `$ git commit -m “nova mensagem do commit” --amend` 
 
+> *Se tiver outro arquivo no staged vai salvar junto nesse novo commit.*
+> *Para alterar somente a mensagem do commit, resolve o problema da mensagem no exato momento que fez, pois ai não vai ter nada no staged.*
+
 ## :pushpin: Verificar todos os commits do arquivo
-Inteiro  | Curto 
+shas extenços | shas curtos 
 :-------:|:---:
 `git log`|`git log --oneline` 
 
@@ -55,10 +65,9 @@ Primeira vez | Demais vezes
 `$ git push -u origin master` | -
 `$ git push origin master` | - 
 
- 
 ## :pushpin: Apaga os commits de cima para baixo até o repositório dado checkout 
 `$ git reset --hard  <6NumerosDoCommit>`  
->*Cuidado com esse comando.*
+>*Cuidado com esse comando. Apaga permantemente*
 
 ## :pushpin: Retira algo do statged 
 Um por vez | Todos

@@ -46,11 +46,15 @@ Primeira vez | Demais vezes
 `$ git pull origin master` | `$ git pull`
 
 ## :pushpin: Empurrar para o servidor 
-Primeira vez | Demais vezes
+ Primeiro momento| Demais
 :---|:---
-`$ git push -u origin master` | `$ git push`
+`$ git push --set-upstream origin master`| `$ git push`
+
+ ?| -
+:--:|:---:
+`$ git push -u origin master` | -
 `$ git push origin master` | - 
-`$ git push --set-upstream origin master`| -
+
  
 ## :pushpin: Apaga os commits de cima para baixo até o repositório dado checkout 
 `$ git reset --hard  <6NumerosDoCommit>`  

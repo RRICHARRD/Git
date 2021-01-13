@@ -99,3 +99,6 @@ Um por vez | Todos
 ## :pushpin: Criar uma branch e no exato momento alternar para ela
 `$ git checkout -b <NomeDaBranch>`
 
+## :pushpin: Criar uma Tag
+`$ git tag -a <NomeDaTag> -m"Não tenho certeza, mas acho que seria uma mensagem"`
+

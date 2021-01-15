@@ -43,9 +43,9 @@ Um por vez                       | Tudo
 > *Para alterar somente a mensagem do commit, resolve o problema da mensagem no exato momento que fez, pois ai não vai ter nada no staged.*
 
 ## :pushpin: Verificar todos os commits do arquivo
-shas extenços | shas curtos 
-:-------:|:---:
-`git log`|`git log --oneline` 
+shas extenços | shas curtos | shas completos
+:-------:|:---: | :---:
+`$ git log`|`$ git log --oneline` | `$ git log --pretty=oneline` 
 
 ## :pushpin: Associar repositório local com o de origem 
 `$ 	git remote add origin <UrlDoRepositorio>`

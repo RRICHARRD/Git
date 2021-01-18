@@ -5,6 +5,7 @@
 
 ## :pushpin: Verificar configurações do git na máquina
 `$ git config --list`
+
 >*Algum momento pode precisar remover algum login da máquina. Entrar em Painel de Controle e opção Gerenciador de Credenciais.* 
 
 ## :pushpin: Atualizar/Cadastrar user e email
@@ -12,8 +13,11 @@ user | email
 :--- | :---
 `$ git config --global user.name “<NomeDeUsuario>”` <br/> |`$ git config --global user.email “<EmailExemplo@gmail.com>”`
 
+>*Essas informações ficam disponíveis para visualização no commit, isso significa que a cada snapshoot (commit) feito no git, sempre vai salvar a pessoa que fez a alteração. Além disso mostra o horário que foi realizada.*
+
 ## :pushpin: Criar repositório local
 `$ git init`
+
 > *Reinicializa o repositório caso possua.*
 
 ## :pushpin: Verificar status dos arquivos
@@ -30,6 +34,7 @@ Um por vez                       | Tudo
 `$ git commit -m “mensagem do commit”`
 
 > Verifica se o que você fez realmente foi salvo 
+
 ## :pushpin: Inserir arquivo do staged no último commit já realizado
 `$git commit --amend`
 
@@ -43,7 +48,7 @@ Um por vez                       | Tudo
 > *Para alterar somente a mensagem do commit, resolve o problema da mensagem no exato momento que fez, pois ai não vai ter nada no staged.*
 
 ## :pushpin: Verificar todos os commits do arquivo
-shas extenços | shas curtos | shas completos
+sha-1 extenços | sha-1 curtos | sha-1 completos
 :-------:|:---: | :---:
 `$ git log`|`$ git log --oneline` | `$ git log --pretty=oneline` 
 
@@ -87,11 +92,17 @@ Um por vez | Todos
 `$ git diff`
 >*A comparação ocorre entre as modificações inseridas no documento que não possuem no commit anterior, ou seja, compara o arquivo salvo do último commit com os novos códigos >inseridos, é o arquivo salvo no commit contra o mesmo arquivo com alterações. NÃO DÁ PARA VER AS ALTERAÇÕES CASO OS ARQUIVOS ESTEJAM NO STAGED!*
 
+## :pushpin: Criar uma branch no repositório 
+`$ git branch <NomeDaBranch>`
+
 ## :pushpin: Listar as branches do repositório 
 `$ git branch`
 
-## :pushpin: Criar uma branch no repositório 
-`$ git branch <NomeDaBranch>`
+## :pushpin: Enviar branch para o repositório
+`$ git --set-upstream origin <NomeDaBranch>`
+
+>*Usar `$ git checkout <NomeDaBranch>` primeiro*
+>*Cria uma nova branch no repositório de origin com o <NomeDaBranch> dado, associando essa nova branch criada no repositório remoto com a branch criada no repositório local, é muito importante usar o mesmo nome de branch nessa no comando `$ git --set-upstream origin <NomeDaBranch>` para não confundir, já que fica inviável, além de sem sentido, trabalhar com inúmeras ramificações com diferentes nomes no repositório de origin e remoto.*
 
 ## :pushpin: Alterar de branch
 `$ git checkout <NomeDaBranch>`

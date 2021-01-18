@@ -105,7 +105,7 @@ Um por vez | Todos
 >*Se tiver em equipe, e alguém realizar a criação da branch e enviar para o repositório, é necessário usar o comando `$git pull` trazer tudo do repositório de origin para o repositório remoto.*
 
 ## :pushpin: Enviar branch para o repositório
-`$ git --set-upstream origin <NomeDaBranch>`
+`$ git push --set-upstream origin <NomeDaBranch>`
 
 >*Usar `$ git checkout <NomeDaBranch>` primeiro*
 >*Cria uma nova branch no repositório de origin com o <NomeDaBranch> dado, associando essa nova branch criada no repositório remoto com a branch criada no repositório local, é muito importante usar o mesmo nome de branch nessa no comando `$ git --set-upstream origin <NomeDaBranch>` para não confundir, já que fica inviável, além de sem sentido, trabalhar com inúmeras ramificações com diferentes nomes no repositório de origin e remoto.*

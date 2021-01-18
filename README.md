@@ -56,9 +56,11 @@ sha-1 extenços | sha-1 curtos | sha-1 completos
 `$ 	git remote add origin <UrlDoRepositorio>`
 
 ## :pushpin: Trazer para o repositório local os arquivos do servidor 
-Primeira vez | Demais vezes
+Primeira vez | Demais vezes (--set-upstream)
 :---:|:---:
 `$ git pull origin master` | `$ git pull`
+
+>*Pode utilizar esse comando em qualquer branck que estiver*
 
 ## :pushpin: Empurrar para o servidor 
  Primeiro momento| Demais
@@ -97,6 +99,9 @@ Um por vez | Todos
 
 ## :pushpin: Listar as branches do repositório 
 `$ git branch`
+
+>*Caso o repositório for clonado, esse comando não vai listar todas as branches existentes, precisaria usar o `$ git checkout <NomeDaBranch>`, vai alterar para ela inclusive, mas dai em diante vai aparecer o nome da branch ao utilizar o comando `$ git branch`*
+>*Se tiver em equipe, e alguém realizar a criação da branch e enviar para o repositório, é necessário usar o comando `$git pull` trazer tudo do repositório de origin para o repositório remoto*
 
 ## :pushpin: Enviar branch para o repositório
 `$ git --set-upstream origin <NomeDaBranch>`

@@ -111,7 +111,7 @@ Um por vez | Todos
 `$ git checkout -b <NomeDaBranch>`
 
 ## :pushpin: Criar uma Tag
-`$ git tag -a <NomeDaTag> -m"Não tenho certeza, mas acho que seria uma mensagem"`
+`$ git tag -a <NomeDaTag> -m "Mensagem da tag, aparece no github"`
 >*Cria na última versão do commit disponível, se quiser colocar a tag em um commit antigo, use o comando `$ git checkout <NumeroDoSha>` para ir até esse commit, em seguida crie uma tag normalmente, essa tag ficará associada nesse commit, outra maneira mais simples é utilizar o comando `$ git tag -a <NomeDaTag> <NumeroDoSha>`, se abrir o vim escreve uma mensgem aperta `Esc` coloca :wq e preciona enter para salvar e sair*
 >*listar `$ git tag`*
 

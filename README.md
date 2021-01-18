@@ -125,6 +125,12 @@ Um por vez | Todos
 ## :pushpin: Deletar branch remota
 `$ git push --delete origin <NomeDaBranch>`
 
+## :pushpin: Fazer merge
+`$ git merge <NomeDaBranch>`
+
+>*Estar com checkout na branch que gostaria de trazer os commit de outra ramificação.*
+>*Todos os commits dessa ramificação que está sendo usada para aplicar o merge ficarão nesse nova branch que foi dado o checkout, pode ser tanto a master como qualquer outra.*
+
 ## :pushpin: Criar uma Tag
 `$ git tag -a <NomeDaTag> -m "Mensagem da tag, aparece no github"`
 

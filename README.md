@@ -73,8 +73,9 @@ Primeira vez | Demais vezes (--set-upstream)
 `$ git push origin master` | - 
 
 ## :pushpin: Apaga os commits de cima para baixo até o repositório dado checkout 
-`$ git reset --hard  <6NumerosDoCommit>`  
->*Cuidado com esse comando. Apaga permantemente*
+`$ git reset --hard  <6NumerosDoCommit>` 
+
+>*Cuidado com esse comando. Apaga permantemente.*
 
 ## :pushpin: Retira algo do statged 
 Um por vez | Todos
@@ -92,7 +93,7 @@ Um por vez | Todos
 
 ## :pushpin: Verificar a diferença de um arquivo para o outro no terminal do git bash
 `$ git diff`
->*A comparação ocorre entre as modificações inseridas no documento que não possuem no commit anterior, ou seja, compara o arquivo salvo do último commit com os novos códigos >inseridos, é o arquivo salvo no commit contra o mesmo arquivo com alterações. NÃO DÁ PARA VER AS ALTERAÇÕES CASO OS ARQUIVOS ESTEJAM NO STAGED!*
+>*A comparação ocorre entre as modificações inseridas no documento que não possuem no commit anterior, ou seja, compara o arquivo salvo do último commit com os novos códigos >inseridos, é o arquivo salvo no commit contra o mesmo arquivo com alterações. NÃO DÁ PARA VER AS ALTERAÇÕES CASO OS ARQUIVOS ESTEJAM NO STAGED!.*
 
 ## :pushpin: Criar uma branch no repositório 
 `$ git branch <NomeDaBranch>`
@@ -101,7 +102,7 @@ Um por vez | Todos
 `$ git branch`
 
 >*Caso o repositório for clonado, esse comando não vai listar todas as branches existentes, precisaria usar o `$ git checkout <NomeDaBranch>`, vai alterar para ela inclusive, mas dai em diante vai aparecer o nome da branch ao utilizar o comando `$ git branch`*
->*Se tiver em equipe, e alguém realizar a criação da branch e enviar para o repositório, é necessário usar o comando `$git pull` trazer tudo do repositório de origin para o repositório remoto*
+>*Se tiver em equipe, e alguém realizar a criação da branch e enviar para o repositório, é necessário usar o comando `$git pull` trazer tudo do repositório de origin para o repositório remoto.*
 
 ## :pushpin: Enviar branch para o repositório
 `$ git --set-upstream origin <NomeDaBranch>`
@@ -115,11 +116,22 @@ Um por vez | Todos
 ## :pushpin: Criar uma branch e no exato momento alternar para ela
 `$ git checkout -b <NomeDaBranch>`
 
+## :pushpin: Deletar branch local
+`$ git branch -d <NomeDaBranch>`
+
+>*Não é possível fazer esse ato estando na branch que deseja apagar, significa que é necessário estar em outra branch.*
+>*As vezes pode ocorrer do git não deixar apagar, ai precisa utilizar o comando `$ git branch -D <NomeDaBranch>`.*
+
+## :pushpin: Deletar branch remota
+`$ git push --delete origin <NomeDaBranch>`
+
 ## :pushpin: Criar uma Tag
 `$ git tag -a <NomeDaTag> -m "Mensagem da tag, aparece no github"`
->*Cria na última versão do commit disponível, se quiser colocar a tag em um commit antigo, use o comando `$ git checkout <NumeroDoSha>` para ir até esse commit, em seguida crie uma tag normalmente, essa tag ficará associada nesse commit, outra maneira mais simples é utilizar o comando `$ git tag -a <NomeDaTag> <NumeroDoSha>`, se abrir o vim escreve uma mensgem aperta `Esc` coloca :wq e preciona enter para salvar e sair*
->*listar `$ git tag`*
+
+>*Cria na última versão do commit disponível, se quiser colocar a tag em um commit antigo, use o comando `$ git checkout <NumeroDoSha>` para ir até esse commit, em seguida crie uma tag normalmente, essa tag ficará associada nesse commit, outra maneira mais simples é utilizar o comando `$ git tag -a <NomeDaTag> <NumeroDoSha>`, se abrir o vim escreve uma mensgem aperta `Esc` coloca :wq e preciona enter para salvar e sair.*
+>*listar `$ git tag`.*
 
 ## :pushpin: Eviar tag para o repositório do github
 `$ git push origin <NomeDaTag>`
->*Ficam em release (GitHub)*
+
+>*Ficam em tags na página do github.*

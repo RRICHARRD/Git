@@ -69,6 +69,11 @@ sha-1 extenços | sha-1 curtos | sha-1 completos
 
 ---
 
+## :pushpin: Verificar a URL do repositório remoto 
+`$ 	git remote -v`
+
+---
+
 ## :pushpin: Trazer para o repositório local os arquivos do servidor 
 Primeira vez | Demais vezes (--set-upstream)
 :---:|:---:

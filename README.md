@@ -83,14 +83,17 @@ Primeira vez | Demais vezes (--set-upstream)
 
 ---
 
-## :pushpin: Empurrar para o servidor 
- Primeiro momento| Demais
+## :pushpin: Enviar commit para o servidor 
+ Primeiro momento| Demais momentos
 :---|:---
 `$ git push --set-upstream origin master`| `$ git push`
 
- ?| -
+ Comando curto| -
 :--:|:---:
 `$ git push -u origin master` | -
+
+?| - 
+:--:|:---:
 `$ git push origin master` | - 
 
 ---
@@ -113,13 +116,18 @@ Um por vez | Todos
 
 ---
 
-## :pushpin: Mudar a versão atual de salvamente através do commit
-`$ git checkout <6NumerosDoCommit >`
+## :pushpin: Alterarnar versão do commit
+`$ git checkout <6NumerosDoSha1>`
 
 ---
 
-## :pushpin: Restaurar versão padrão do commit do último usuário 
+## :pushpin: Armazenar últimas alterações na memória do git para posteriormente realizar um commit 
 `$ git stash`
+
+---
+
+## :pushpin: Mostrar os stash na memória para serem salvos
+`$ git statsh list`
 
 ---
 

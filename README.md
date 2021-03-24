@@ -98,6 +98,14 @@ Primeira vez | Demais vezes (--set-upstream)
 
 ---
 
+## :pushpin: Apaga os commits de cima para baixo mas não apaga o que foi feito no código, o tanto de commits (esse de cima para baixo), é o número especificado ao em N.    
+`$ git reset --soft HEAD~N`
+
+>*Esse N representa o tanto de commit que será apagado de cima para baixo, lembrando, ele não altera o que foi feito no código.
+>Dá para usar esse código para juntar vários commits em um só, mas vai ter que ser em ordem do mais novo para o mais velho sem pular nenhum.*
+---
+
+
 ## :pushpin: Apaga os commits de cima para baixo até o repositório dado checkout 
 `$ git reset --hard  <6NumerosDoCommit>` 
 

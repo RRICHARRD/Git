@@ -105,6 +105,25 @@ Primeira vez | Demais vezes (--set-upstream)
 >Dá para usar esse código para juntar vários commits em um só, mas vai ter que ser em ordem do mais novo para o mais velho sem pular nenhum.*
 ---
 
+## :pushpin: Juntar commits, amassar dois ou mais commit em um único commit
+Longo | Curto
+:-----|:-----
+`$ git rebase --interactive HEAD~N `|`$ git rebase -i HEAD~N`
+
+>*O N significa o número de commit que vai querer juntar, é para abrir o vim, se não abrir usa o código abaixo para configurar.
+>Vai abrir com umas palavras escritas pick, escreve squash no lugar*
+
+---
+
+#### :pushpin: Configurar para abrir o vim
+`git config --global core.editor "vim"`
+
+#### :pushpin: Abortar o rebase
+`$ git rebase --abort`
+
+>*Caso faça algo no vim e nõo condiga voltar, MAS NÂO SALVOU, fecha o terminal git a abre novamente para abortar, vai voltar tudo para o que tava.*
+
+---
 
 ## :pushpin: Apaga os commits de cima para baixo até o repositório dado checkout 
 `$ git reset --hard  <6NumerosDoCommit>` 

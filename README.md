@@ -121,7 +121,7 @@ Longo | Curto
 #### :pushpin: Abortar o rebase
 `$ git rebase --abort`
 
->*Caso faça algo no vim e nõo condiga voltar, MAS NÂO SALVOU, fecha o terminal git a abre novamente para abortar, vai voltar tudo para o que tava.*
+>*Caso faça algo no vim e nõo consiga desfazer, MAS NÃO SALVOU, fecha o terminal git a abre novamente para abortar, vai voltar tudo para o que estava antes.*
 
 ---
 

@@ -112,7 +112,7 @@ Longo | Curto
 
 >*O N significa o número de commit que vai querer juntar, é para abrir o vim, se não abrir usa o código abaixo para configurar.
 >Vai abrir com umas palavras escritas pick, escreve squash no lugar deixando a primeira lá em cima com pick, aperte : e digite wq! para salvar e sair, vai abrir outra tela do vi para inserir um comentário, apaga todos os comentários que veio e digita o comentário que utilizado para detalhar essa junção.*
-
+>Atenção: Faça isso antes de enviar os commits para o repositório, se já estiver lá e depois tentar juntar e dar push vai dar dor de cabeça.
 ---
 
 #### :pushpin: Configurar para abrir o vim

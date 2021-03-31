@@ -252,3 +252,13 @@ Com mensagem do último commit| Com mensagem específica para essa Tag
 
 >*Ficam na opção tags (página do repositório no github).*
 ---
+
+## 📌 Apagar commit do repositório remoto
+
+`$ git push origin +master`
+
+>⚠️ Antes the fazer essa instrução, remova os commits dos repositório local utilizando o comando `$ git reset --soft HEAD~N`, esse comando não apaga as nenhum arquivo, ele coloca todos os arquivos escolhidos novamente no staged, isso vai ser importante, pois a brach do repositório remoto vai ficar igual a sua branch local, portanto, desfaça os commits do seu repositório local deixando da forma que você deseja que o remote fique. <br />
+Quando se tira esses aquivos do seu repositório local e coloca no staged, ao utilizar o comando `$ git push origin +master` o repositório remoto vai atualizar e ficar igual ao seu repostório local (ao pé da letra é como se tivesse apagando), lembresse que foi utilizado o comando `$ git reset --soft HEAD~N` para deixar o repositório sem os commits, mas com todos os arquivos da maneira como estavam, então faz um commit novamente e envia para o servidor. <br /> 
+>+ O caractere "+" ao lado do nome da brach significa que está forçando uma atualização naquela branch, nesse caso o "master" é o nome da branch, vale lembrar que deve ser a mesma brach do reporitório local. 
+
+---

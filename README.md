@@ -1,4 +1,7 @@
-# :desktop_computer: GIT BASH
+<p align="center">
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo-Color.png" alt="Git-logo-color" width="250"/>
+</p>
+
 <p align="justify">
   Esse arquivo tem como objetivo ser uma consulta rápida dos comando do terminal git bash, ele não elimina a verificação da documentação oficial no site https://git-scm.com.         Para as pessoas que não desenvolveram proeficiência na língua inglesa, esse breve documento pode auxiliar no uso da ferramenta.
 </p>
@@ -237,7 +240,7 @@ Com checkout na própria | Com checkout em outra
 ## :pushpin: Criar uma Tag
 Com mensagem do último commit| Com mensagem específica para essa Tag
 :---:|:---:
-`$git tag <NomeDaTag>`|`$ git tag -a <NomeDaTag> -m "Mensagem da tag, aparece no github"`
+`$ git tag <NomeDaTag>`|`$ git tag -a <NomeDaTag> -m "Mensagem da tag, aparece no github"`
 
 >*Cria na última versão do commit disponível, se quiser colocar a tag em um commit antigo, use o comando `$ git checkout <NumeroDoSha>` para ir até esse commit, em seguida crie uma tag normalmente, essa tag ficará associada nesse commit, outra maneira mais simples é utilizar o comando `$ git tag -a <NomeDaTag> <NumeroDoSha>`, se abrir o vim escreve uma mensgem aperta `Esc` coloca :wq e preciona enter para salvar e sair.* 
 ---
@@ -257,8 +260,12 @@ Com mensagem do último commit| Com mensagem específica para essa Tag
 
 `$ git push origin +master`
 
->⚠️ Antes the fazer essa instrução, remova os commits dos repositório local utilizando o comando `$ git reset --soft HEAD~N`, esse comando não apaga as nenhum arquivo, ele coloca todos os arquivos escolhidos novamente no staged, isso vai ser importante, pois a brach do repositório remoto vai ficar igual a sua branch local, portanto, desfaça os commits do seu repositório local deixando da forma que você deseja que o remote fique. <br />
-Quando se tira esses aquivos do seu repositório local e coloca no staged, ao utilizar o comando `$ git push origin +master` o repositório remoto vai atualizar e ficar igual ao seu repostório local (ao pé da letra é como se tivesse apagando), lembresse que foi utilizado o comando `$ git reset --soft HEAD~N` para deixar o repositório sem os commits, mas com todos os arquivos da maneira como estavam, então faz um commit novamente e envia para o servidor. <br /> 
->+ O caractere "+" ao lado do nome da brach significa que está forçando uma atualização naquela branch, nesse caso o "master" é o nome da branch, vale lembrar que deve ser a mesma brach do reporitório local. 
+>⚠️ *Antes the fazer essa instrução, remova os commits dos repositório local utilizando o comando `$ git reset --soft HEAD~N`, esse comando não apaga as nenhum arquivo, ele coloca todos os arquivos escolhidos novamente no staged, isso vai ser importante, pois a brach do repositório remoto vai ficar igual a sua branch local, portanto, desfaça os commits do seu repositório local deixando da forma que você deseja que o remote fique. <br />
+Quando se tira esses aquivos do seu repositório local e coloca no staged, ao utilizar o comando `$ git push origin +master` o repositório remoto vai atualizar e ficar igual ao seu repostório local (ao pé da letra é como se tivesse apagando), lembresse que foi utilizado o comando `$ git reset --soft HEAD~N` para deixar o repositório sem os commits, mas com todos os arquivos da maneira como estavam, então faz um commit novamente e envia para o servidor.* <br /> 
+>+ *O caractere "+" ao lado do nome da brach significa que está forçando uma atualização naquela branch, nesse caso o "master" é o nome da branch, vale lembrar que deve ser a mesma brach do reporitório local.* 
 
 ---
+
+### Créditos
+
+<img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo-Color.png" alt="Git-logo-color" margin-right:30px width="25"/> Git Logo by [Jason Long](https://twitter.com/jasonlong) is licensed under the [Creative Commons Attribution 3.0 Unported License.](https://creativecommons.org/licenses/by/3.0/)

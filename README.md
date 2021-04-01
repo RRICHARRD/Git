@@ -2,18 +2,26 @@
   <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo-Color.png" alt="Git-logo-color" width="250"/>
 </p>
 
+***
+
 <p align="justify">
   Esse arquivo tem como objetivo ser uma consulta rápida dos comando do terminal git bash, ele não elimina a verificação da documentação oficial no site https://git-scm.com.         Para as pessoas que não desenvolveram proeficiência na língua inglesa, esse breve documento pode auxiliar no uso da ferramenta.
 </p>
 
-## :pushpin: Verificar configurações do git na máquina
-
+<h1> 
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25"> 
+  Verificar configurações do git na máquina
+</h1> 
+  
 `$ git config --list`
 
 >*Algum momento pode precisar remover algum login da máquina. Entrar em Painel de Controle e opção Gerenciador de Credenciais.* 
 ---
 
-## :pushpin: Atualizar/Cadastrar user e email
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
+  Atualizar/Cadastrar user e email
+</h1>
 user | email 
 :--- | :---
 `$ git config --global user.name “<NomeDeUsuario>”` <br/> |`$ git config --global user.email “<EmailExemplo@gmail.com>”`
@@ -245,7 +253,7 @@ Com mensagem do último commit| Com mensagem específica para essa Tag
 >*Cria na última versão do commit disponível, se quiser colocar a tag em um commit antigo, use o comando `$ git checkout <NumeroDoSha>` para ir até esse commit, em seguida crie uma tag normalmente, essa tag ficará associada nesse commit, outra maneira mais simples é utilizar o comando `$ git tag -a <NomeDaTag> <NumeroDoSha>`, se abrir o vim escreve uma mensgem aperta `Esc` coloca :wq e preciona enter para salvar e sair.* 
 ---
 
-## :pushpin: Listar as tags do repositório local
+## ![]() Listar as tags do repositório local
 `$ git tag`
 
 ---
@@ -268,4 +276,4 @@ Quando se tira esses aquivos do seu repositório local e coloca no staged, ao ut
 
 ### Créditos
 
-<img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo-Color.png" alt="Git-logo-color" margin-right:30px width="25"/> Git Logo by [Jason Long](https://twitter.com/jasonlong) is licensed under the [Creative Commons Attribution 3.0 Unported License.](https://creativecommons.org/licenses/by/3.0/)
+Git Logo by [Jason Long](https://twitter.com/jasonlong) is licensed under the [Creative Commons Attribution 3.0 Unported License.](https://creativecommons.org/licenses/by/3.0/)

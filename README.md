@@ -22,6 +22,7 @@
   <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
   Atualizar/Cadastrar user e email
 </h1>
+
 user | email 
 :--- | :---
 `$ git config --global user.name “<NomeDeUsuario>”` <br/> |`$ git config --global user.email “<EmailExemplo@gmail.com>”`
@@ -29,18 +30,30 @@ user | email
 >*Essas informações ficam disponíveis para visualização no commit, isso significa que a cada snapshoot (commit) feito no git, sempre vai salvar a pessoa que fez a alteração. Além disso mostra o horário que foi realizada.*
 ---
 
-## :pushpin: Criar repositório local
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Criar repositório local
+</h1>
+
 `$ git init`
 
 > *Reinicializa o repositório caso possua.*
 ---
 
-## :pushpin: Verificar status dos arquivos
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25">
+  Verificar status dos arquivos
+</h1>  
+  
 `$ git status`
 
 ---
 
-## :pushpin: Adicionar arquivo untrackted ao staged
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Adicionar arquivo untrackted ao staged
+</h1>
+
 Um por vez                       | Tudo
 :-------------------------------:|:---:
 `$ git add <NomeDoArquivo>`<br/> |`$ git add .` <br/>
@@ -48,27 +61,44 @@ Um por vez                       | Tudo
 -|`$ git -A` <br/>
 
 ---
-## :pushpin: Salvar uma versão, realizar um commit
+
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25">
+  Salvar uma versão, realizar um commit
+</h1>
+
 `$ git commit -m “mensagem do commit”`
 
 > Verifica se o que você fez realmente foi salvo 
 ---
 
-## :pushpin: Inserir arquivo do staged no último commit já realizado
+<h1>
+   <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+   Inserir arquivo do staged no último commit já realizado
+</h1>
+
 `$git commit --amend`
 
 > *Vai abrir o editor VIM, muda a mensagem lá em cima se quiser e depois escreve :wq para sair.* </br>
 > *O w vem de write e q de quite.*
 ---
 
-## :pushpin: Alterar mensagem do último commit realizado (Não tem na documentação oficial explicitamente) 
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25">
+  Alterar mensagem do último commit realizado (Não tem na documentação oficial explicitamente) 
+</h1>
+
 `$ git commit -m “nova mensagem do commit” --amend` 
 
 > *Se tiver outro arquivo no staged vai salvar junto nesse novo commit.* </br>
 > *Para alterar somente a mensagem do commit, resolve o problema da mensagem no exato momento que fez, pois ai não vai ter nada no staged.*
 ---
 
-## :pushpin: Verificar todos os commits do arquivo
+<h1>
+   <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+   Verificar todos os commits do arquivo
+</h1>
+
 sha-1 extenços | sha-1 curtos | sha-1 completos
 :-------:|:---: | :---:
 `$ git log`|`$ git log --oneline` | `$ git log --pretty=oneline` 

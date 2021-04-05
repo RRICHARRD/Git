@@ -105,17 +105,29 @@ sha-1 extenços | sha-1 curtos | sha-1 completos
 
 ---
 
-## :pushpin: Associar repositório local com o de origem 
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
+  Associar repositório local com o de origem
+</h1>
+
 `$ 	git remote add origin <UrlDoRepositorio>`
 
 ---
 
-## :pushpin: Verificar a URL do repositório remoto 
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Verificar a URL do repositório remoto
+</h1>
+
 `$ 	git remote -v`
 
 ---
 
-## :pushpin: Trazer para o repositório local os arquivos do servidor 
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
+  Trazer para o repositório local os arquivos do servidor 
+</h1>
+
 Primeira vez | Demais vezes (--set-upstream)
 :---:|:---:
 `$ git pull origin master` | `$ git pull`
@@ -124,7 +136,11 @@ Primeira vez | Demais vezes (--set-upstream)
 
 ---
 
-## :pushpin: Enviar commit para o servidor 
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Enviar commit para o servidor
+</h1>  
+  
  Primeiro momento| Demais momentos
 :---|:---
 `$ git push --set-upstream origin master`| `$ git push`
@@ -139,14 +155,22 @@ Primeira vez | Demais vezes (--set-upstream)
 
 ---
 
-## :pushpin: Apaga os commits de cima para baixo mas não apaga o que foi feito no código, o tanto de commits (esse de cima para baixo), é o número especificado ao em N.    
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
+  Apaga os commits de cima para baixo mas não apaga o que foi feito no código, o tanto de commits (esse de cima para baixo), é o número especificado ao em N.    
+</h1>
+  
 `$ git reset --soft HEAD~N`
 
 >*Esse N representa o tanto de commit que será apagado de cima para baixo, lembrando, ele não altera o que foi feito no código.
 >Dá para usar esse código para juntar vários commits em um só, mas vai ter que ser em ordem do mais novo para o mais velho sem pular nenhum.*
 ---
 
-## :pushpin: Juntar commits, amassar dois ou mais commit em um único commit
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
+  Juntar commits, amassar dois ou mais commit em um único commit
+</h1>
+  
 Longo | Curto
 :-----|:-----
 `$ git rebase --interactive HEAD~N `|`$ git rebase -i HEAD~N`
@@ -156,10 +180,18 @@ Longo | Curto
 >Atenção: Faça isso antes de enviar os commits para o repositório, se já estiver lá e depois tentar juntar e dar push vai dar dor de cabeça.
 ---
 
-#### :pushpin: Configurar para abrir o vim
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  + Configurar para abrir o vim
+</h1>
+
 `git config --global core.editor "vim"`
 
-#### :pushpin: Abortar o rebase
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
+  + Abortar o rebase
+</h1>
+
 `$ git rebase --abort`
 
 >*Caso faça algo no vim e nõo consiga desfazer, MAS NÃO SALVOU, fecha o terminal git a abre novamente para abortar, vai voltar tudo para o que estava antes.*

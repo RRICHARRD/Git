@@ -167,7 +167,7 @@ Primeira vez | Demais vezes (--set-upstream)
 ---
 
 <h1>
-  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Color" width="25"> 
   Juntar commits, amassar dois ou mais commit em um único commit
 </h1>
   
@@ -181,14 +181,14 @@ Longo | Curto
 ---
 
 <h1>
-  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Black" width="25">
   + Configurar para abrir o vim
 </h1>
 
 `git config --global core.editor "vim"`
 
 <h1>
-  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Color" width="25"> 
   + Abortar o rebase
 </h1>
 
@@ -198,45 +198,81 @@ Longo | Curto
 
 ---
 
-## :pushpin: Apaga os commits de cima para baixo até o repositório dado checkout 
+
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25">
+  Apaga os commits de cima para baixo até o repositório dado checkout 
+</h1>
+
 `$ git reset --hard  <6NumerosDoCommit>` 
 
 >*Cuidado com esse comando. Apaga permantemente.*
 ---
 
-## :pushpin: Retira algo do statged 
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25"> 
+  Retira algo do statged 
+</h1>
+
 Um por vez | Todos
 :--- |:---
 `$	git restore --staged <nomeDoArquivoNoStage>` | `$ git restore --staged .`
 
 ---
 
-## :pushpin: Clonar um repositório 
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
+  Clonar um repositório 
+</h1>
+
 `$ git clone "<UrlDoRepositorio>"`
 
 ---
 
-## :pushpin: Alterarnar versão do commit
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25"> 
+  Alterarnar versão do commit
+</h1>
+
 `$ git checkout <6NumerosDoSha1>`
 
 ---
 
-## :pushpin: Armazenar últimas alterações na memória do git para posteriormente realizar um commit 
+
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25">
+  Armazenar últimas alterações na memória do git para posteriormente realizar um commit 
+</h1>
+
 `$ git stash`
 
 ---
 
-## :pushpin: Mostrar os stash na memória para serem salvos
+
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Mostrar os stash na memória para serem salvos
+</h1>
+
 `$ git statsh list`
 
 ---
 
-## :pushpin: Verificar a diferença de um arquivo para o outro no terminal do git bash
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-black" width="25"> 
+  Verificar a diferença de um arquivo para o outro no terminal do git bash
+</h1>
+
 `$ git diff`
 >*A comparação ocorre entre as modificações inseridas no documento que não possuem no commit anterior, ou seja, compara o arquivo salvo do último commit com os novos códigos inseridos, é o arquivo salvo no commit contra o mesmo arquivo com alterações. NÃO DÁ PARA VER AS ALTERAÇÕES CASO OS ARQUIVOS ESTEJAM NO STAGED!.*
 ---
 
-## :pushpin: Criar uma branch no repositório 
+
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Criar uma branch no repositório 
+</h1>
+  
 `$ git branch <NomeDaBranch>`
 
 ---

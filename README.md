@@ -277,7 +277,12 @@ Um por vez | Todos
 
 ---
 
-## :pushpin: Listar as branches do repositório 
+
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-black" width="25"> 
+  Listar as branches do repositório
+</h1>
+
 `$ git branch`
 
 >*Caso o repositório for clonado, esse comando não vai listar todas as branches existentes, precisaria usar o `$ git checkout <NomeDaBranch>`, vai alterar para ela inclusive, mas dai em diante vai aparecer o nome da branch ao utilizar o comando `$ git branch`* </br>
@@ -285,7 +290,11 @@ Um por vez | Todos
 
 ---
 
-## :pushpin: Enviar branch para o repositório
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Enviar branch para o repositório
+</h1>
+
 `$ git push --set-upstream origin <NomeDaBranch>`
 
 >*Usar `$ git checkout <NomeDaBranch>` primeiro* </br>
@@ -293,19 +302,30 @@ Um por vez | Todos
 
 ---
 
-## :pushpin: Alterar de branch
+
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-black" width="25"> 
+  Alterar de branch
+</h1>
 `$ git checkout <NomeDaBranch>`
 
 ---
 
-## :pushpin: Alterar o nome da branch local
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Alterar o nome da branch local
+</h1>
+
 Com checkout na própria | Com checkout em outra
 :---:|:---:
 `$ git branch -m <NovoNomedaBranch>` | `$ git branch -m <NomeDaBranch> <NovoNomeDessaBranch>`  
 
 ---
 
-## :pushpin: Alterar o nome da branch remota
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-black" width="25"> 
+  Alterar o nome da branch remota
+</h1>
 
 **Não há comando específico para fazer isso, segue abaixo um passo a passo para conseguir realizar o feito**
 ```
@@ -319,31 +339,52 @@ Com checkout na própria | Com checkout em outra
 
 ---
 
-## :pushpin: Criar uma branch e no exato momento alternar para ela
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Criar uma branch e no exato momento alternar para ela
+</h1>
+
 `$ git checkout -b <NomeDaBranch>`
 
 ---
 
-## :pushpin: Deletar branch local
+
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-black" width="25"> 
+  Deletar branch local
+</h1>
+
 `$ git branch -d <NomeDaBranch>`
 
 >*Não é possível fazer esse ato estando na branch que deseja apagar, significa que é necessário estar em outra branch.*</br>
 >*As vezes pode ocorrer do git não deixar apagar, ai precisa utilizar o comando `$ git branch -D <NomeDaBranch>`.*
 ---
 
-## :pushpin: Deletar branch remota
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Deletar branch remota
+</h1>
+
 `$ git push --delete origin <NomeDaBranch>`
 
 ---
 
-## :pushpin: Fazer merge
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-black" width="25"> 
+  Fazer merge
+</h1>
+
 `$ git merge <NomeDaBranch>`
 
 >*Estar com checkout na branch que gostaria de trazer os commit de outra ramificação.* </br>
 >*Todos os commits dessa ramificação que está sendo usada para aplicar o merge ficarão nesse nova branch que foi dado o checkout, pode ser tanto a master como qualquer outra.*
 ---
 
-## :pushpin: Criar uma Tag
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Criar uma Tag
+</h1>
+
 Com mensagem do último commit| Com mensagem específica para essa Tag
 :---:|:---:
 `$ git tag <NomeDaTag>`|`$ git tag -a <NomeDaTag> -m "Mensagem da tag, aparece no github"`
@@ -351,18 +392,30 @@ Com mensagem do último commit| Com mensagem específica para essa Tag
 >*Cria na última versão do commit disponível, se quiser colocar a tag em um commit antigo, use o comando `$ git checkout <NumeroDoSha>` para ir até esse commit, em seguida crie uma tag normalmente, essa tag ficará associada nesse commit, outra maneira mais simples é utilizar o comando `$ git tag -a <NomeDaTag> <NumeroDoSha>`, se abrir o vim escreve uma mensgem aperta `Esc` coloca :wq e preciona enter para salvar e sair.* 
 ---
 
-## ![]() Listar as tags do repositório local
+
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-black" width="25"> 
+  Listar as tags do repositório local
+</h1>
+
 `$ git tag`
 
 ---
 
-## :pushpin: Eviar tag para o repositório do github
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  Eviar tag para o repositório do github
+</h1>
+
 `$ git push origin <NomeDaTag>`
 
 >*Ficam na opção tags (página do repositório no github).*
 ---
 
-## 📌 Apagar commit do repositório remoto
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-black" width="25"> 
+  Apagar commit do repositório remoto
+</h1>
 
 `$ git push origin +master`
 
@@ -372,6 +425,10 @@ Quando se tira esses aquivos do seu repositório local e coloca no staged, ao ut
 
 ---
 
-### Créditos
+<h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-black" width="25"> 
+  Créditos
+</h1>
 
 Git Logo by [Jason Long](https://twitter.com/jasonlong) is licensed under the [Creative Commons Attribution 3.0 Unported License.](https://creativecommons.org/licenses/by/3.0/)

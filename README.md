@@ -403,6 +403,17 @@ Com mensagem do último commit| Com mensagem específica para essa Tag
 ---
 
 <h1>
+  <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-color" width="25">
+  Deletar tag  
+</h1>
+
+Repositório remoto | Repositório local
+:---:|:---:
+`$ git push --delete origin <NomeDaTag>` | `$ git tag -d <NomeDaTag>`
+
+---
+
+<h1>
   <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Color.png" alt="Git-logo.Mark-Color" width="25">
   Eviar tag para o repositório do github
 </h1>

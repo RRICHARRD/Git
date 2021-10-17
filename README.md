@@ -128,9 +128,9 @@ sha-1 extenços | sha-1 curtos | sha-1 completos
   Trazer para o repositório local os arquivos do servidor 
 </h1>
 
-Primeira vez | Demais vezes (--set-upstream)
-:---:|:---:
-`$ git pull origin master` | `$ git pull`
+Primeira vez | Demais vezes (--set-upstream) | Ao criar readme.md e já ter arquivos de programação na branch 
+:---:|:---:|:---:
+`$ git pull origin master` | `$ git pull` | `git pull origin <branchname> --allow-unrelated-histories`
 
 >*Pode utilizar esse comando em qualquer branck que estiver*
 

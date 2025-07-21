@@ -109,7 +109,9 @@ sha-1 extenços | sha-1 curtos | sha-1 completos
   <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
   Associar repositório local com o de origem
 </h1>
+
 `$  git remote remove origin && git remote add origin <UrlDoRepositorio>`
+  
 `$ 	git remote add origin <UrlDoRepositorio>`
 
 ---
@@ -130,7 +132,7 @@ sha-1 extenços | sha-1 curtos | sha-1 completos
 
 Primeira vez | Demais vezes (--set-upstream) | Ao criar readme.md e já ter arquivos de programação na branch 
 :---:|:---:|:---:
-`$ git pull origin master` | `$ git pull` | `git pull origin <branchname> --allow-unrelated-histories`
+`$ git pull origin master` | `$ git pull` | `git pull origin <branchname> --allow-unrelated-histories` or `git merge origin/main --allow-unrelated-histories`
 
 >*Pode utilizar esse comando em qualquer branck que estiver*
 

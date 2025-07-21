@@ -109,7 +109,7 @@ sha-1 extenços | sha-1 curtos | sha-1 completos
   <img src="https://github.com/RRICHARRD/Git/blob/master/git-image/Git-Logo.Mark-Black.png" alt="Git-logo.Mark-Black" width="25"> 
   Associar repositório local com o de origem
 </h1>
-
+`$  git remote remove origin && git remote add origin <UrlDoRepositorio>`
 `$ 	git remote add origin <UrlDoRepositorio>`
 
 ---
